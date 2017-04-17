@@ -154,7 +154,7 @@ class tqdm(object):
                         return '{0:1.2f}'.format(num) + unit + suffix
                     return '{0:2.1f}'.format(num) + unit + suffix
                 return '{0:3.0f}'.format(num) + unit + suffix
-            num /= 1000.0
+            num /= 1024.0
         return '{0:3.1f}Y'.format(num) + suffix
 
     @staticmethod
